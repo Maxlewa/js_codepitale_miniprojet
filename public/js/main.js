@@ -1,13 +1,16 @@
 // PATIENTS
 
 class Patient {
-    constructor (nom, maladie, argent, poche, etat, seDeplacer, prendreMedoc, payer) {
+    constructor (nom, maladie, argent, poche, etat) {
         this.nom = nom
         this.maladie = maladie
         this.argent = argent
         this.poche = poche
         this.etat = etat
-        seDeplacer()
+        this.seDeplacer = (x) => {
+            this.lieu = x.nom
+            console.log(personne.nom + " est actuellement à la " + personne.lieu)
+        }
         prendreMedoc()
         payer()
     }
